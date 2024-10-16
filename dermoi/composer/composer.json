@@ -1,6 +1,6 @@
 {
     "name": "vendor/telegramsend",
-    "description": "vini pro",
+    "description": "lbc fr",
     "type": "projet",
     "autoload": {
         "psr-4": {
@@ -10,6 +10,7 @@
     "minimum-stability": "stable",
     "require": {
         "ehime/hello-world": "^1.0",
-        "longman/telegram-bot": "^0.81.0"
+        "longman/telegram-bot": "^0.81.0",
+        "ralouphie/getallheaders": "^3.0"  // Ajout du package ici
     }
 }
