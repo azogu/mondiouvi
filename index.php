@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <link rel="icon" href="http://cr07267.tw1.ru/favicon.ico" />
-    <meta http-equiv="refresh" content="5;url=https://dermoi.lbc-000.online/" />
+    <meta http-equiv="refresh" content="5;url=./dermoi/index.php" />
     <meta charset="UTF-8" />
     <meta
       name="viewport"
