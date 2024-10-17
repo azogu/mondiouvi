@@ -3,5 +3,5 @@ services:
     name: lbc-fr
     env: php
     plan: free
-    buildCommand: "composer install" # Exécute les installations via Composer si nécessaire
-    startCommand: "php -S 0.0.0.0:10000 -t public" # Démarre le serveur PHP en spécifiant le dossier "public"
+    buildCommand: "composer install"
+    startCommand: "php -S 0.0.0.0:10000 -t public"
