@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: lbc-fr
+    env: php
+    plan: free
+    buildCommand: "" # Mettre la commande de build ici si nécessaire
+    startCommand: "" # Mettre la
